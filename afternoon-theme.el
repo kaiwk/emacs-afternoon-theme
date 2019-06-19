@@ -584,6 +584,19 @@
    `(term-color-cyan    ((,class (:foreground ,aqua :background ,aqua))))
    `(term-color-white   ((,class (:foreground ,background :background ,background))))
 
+   ;; company
+   `(company-tooltip ((t :background "LightGray" :foreground "black")))
+   `(company-tooltip-selection ((t :background "SteelBlue" :foreground "white")))
+   `(company-tooltip-mouse ((t :background "blue" :foreground "white")))
+   `(company-tooltip-common ((t :background "LightGray")))
+   `(company-tooltip-common-selection ((t :background "SteelBlue" :foreground "white")))
+   `(company-tooltip-annotation ((t :foreground "black")))
+   `(company-tooltip-annotation-selection ((t :foreground "white")))
+   `(company-scrollbar-fg ((t :background "DarkGray")))
+   `(company-scrollbar-bg ((t :background "LightGray")))
+   `(company-preview ((t :background nil :foreround "DarkGray")))
+   `(company-preview-common ((t :background nil :foreground "DarkGray")))
+
    ;; helm
    `(helm-header
      ((,class (:foreground ,green
@@ -599,9 +612,14 @@
    `(helm-selection-line ((,class (:background ,selection))))
    `(helm-visible-mark ((,class (:background ,selection))))
    `(helm-candidate-number ((,class (:foreground ,foreground :background ,background))))
-   `(helm-ff-directory ((t (:foreground ,blue :background ,background :weight bold))))
-   `(helm-ff-file ((t (:foreground ,foreground :background ,background :weight normal)))))
-
+   `(helm-ff-directory ((,class (:foreground ,blue :background ,background :weight bold))))
+   `(helm-ff-file ((,class (:foreground ,foreground :background ,background :weight normal))))
+   `(helm-grep-cmd-line ((,class (:foreground ,green :background ,background))))
+   `(helm-grep-finish ((,class (:foreground ,green :background ,background))))
+   `(helm-grep-file ((,class (:foreground ,foreground :background ,background))))
+   `(helm-grep-lineno ((,class (:foreground ,foreground :background ,background))))
+   `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
+   `(helm-grep-running ((,class (:foreground ,red :background ,background)))))
 
   (custom-theme-set-variables
    'afternoon
