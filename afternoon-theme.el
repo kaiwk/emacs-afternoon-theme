@@ -582,7 +582,26 @@
    `(term-color-blue    ((,class (:foreground ,blue :background ,blue))))
    `(term-color-magenta ((,class (:foreground ,purple :background ,purple))))
    `(term-color-cyan    ((,class (:foreground ,aqua :background ,aqua))))
-   `(term-color-white   ((,class (:foreground ,background :background ,background)))))
+   `(term-color-white   ((,class (:foreground ,background :background ,background))))
+
+   ;; helm
+   `(helm-header
+     ((,class (:foreground ,green
+                           :background ,background
+                           :underline nil
+                           :box nil))))
+   `(helm-source-header
+     ((,class (:foreground ,yellow
+                           :background ,background
+                           :weight bold
+                           :box (:line-width -1 :style released-button)))))
+   `(helm-selection ((,class (:background ,selection))))
+   `(helm-selection-line ((,class (:background ,selection))))
+   `(helm-visible-mark ((,class (:background ,selection))))
+   `(helm-candidate-number ((,class (:foreground ,foreground :background ,background))))
+   `(helm-ff-directory ((t (:foreground ,blue :background ,background :weight bold))))
+   `(helm-ff-file ((t (:foreground ,foreground :background ,background :weight normal)))))
+
 
   (custom-theme-set-variables
    'afternoon
