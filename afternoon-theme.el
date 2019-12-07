@@ -172,7 +172,7 @@
                                            :foreground ,comment
                                            :background ,current-line :weight normal
                                            :box (:line-width 1 :color ,foreground)))))
-   `(mode-line-emphasis ((,class (:foreground ,foreground :weight bold))))
+   `(mode-line-emphasis ((,class (:foreground ,blue :weight bold))))
    `(mode-line-highlight ((,class (:foreground ,purple :box nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
    `(region ((,class (:background ,selection))))
