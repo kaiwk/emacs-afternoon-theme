@@ -619,7 +619,10 @@
    `(helm-grep-file ((,class (:foreground ,foreground :background ,background))))
    `(helm-grep-lineno ((,class (:foreground ,foreground :background ,background))))
    `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
-   `(helm-grep-running ((,class (:foreground ,red :background ,background)))))
+   `(helm-grep-running ((,class (:foreground ,red :background ,background))))
+
+   ;; perspective
+   `(persp-selected-face ((t (:weight bold :foreground ,blue)))))
 
   (custom-theme-set-variables
    'afternoon
