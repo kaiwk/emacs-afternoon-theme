@@ -192,6 +192,9 @@
    `(whitespace-tab ((,class (:background nil :foreground ,selection))))
    `(whitespace-hspace ((,class (:background nil :foreground ,selection))))
 
+   ;; mini-modeline
+   `(mini-modeline-mode-line ((t (:background ,foreground :height 0.1 :box nil))))
+
    ;; Parenthesis matching (built-in)
    `(show-paren-match-face ((,class (:background "dodgerblue1" :foreground "white"))))
    `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
@@ -614,8 +617,8 @@
    `(helm-candidate-number ((,class (:foreground ,foreground :background ,background))))
    `(helm-ff-directory ((,class (:foreground ,blue :background ,background :weight bold))))
    `(helm-ff-file ((,class (:foreground ,foreground :background ,background :weight normal))))
-   `(helm-grep-cmd-line ((,class (:foreground ,green :background ,background))))
-   `(helm-grep-finish ((,class (:foreground ,green :background ,background))))
+   `(helm-grep-cmd-line ((,class (:foreground ,foreground :background ,background))))
+   `(helm-grep-finish ((,class (:foreground ,foreground :background ,foreground))))
    `(helm-grep-file ((,class (:foreground ,foreground :background ,background))))
    `(helm-grep-lineno ((,class (:foreground ,foreground :background ,background))))
    `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
